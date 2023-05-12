@@ -1,0 +1,35 @@
+<script>
+  window.onload = function () {
+    const list = ["アタリ","ジャスティス","リリカ","ノホ","忠臣","ジャンヌ","マルコス",
+    "ルチ","Voidoll","まとい","グスタフ","テスラ","ヴィオレッタ","コクリコ","マリア",
+    "アダム","13","勇者","メグメグ","イスタカ","きらら","ポロロッチョ","ソーン","デルミン",
+    "トマス","零夜","ルルカ","ピエール","甘色","ニーズヘッグ","GBG","アリス","イグニス",
+    "輪廻","Bugdoll","ステリア","ラヴィ","アル","ぶれどら","ソル","ディズィー","ミク",
+    "リュウ","春麗","エミリア","レム","カイ","リン","レン","ザクレイ","モノクマ","アクア",
+    "めぐみん","リヴァイ","猫宮","オカリン","セイバー","ギル","忠信","アイズ","ノクト",
+    "敦","芥川","ライザ","ジョーカー","アインズ","キリト","アスナ","ラム","2B","リムル",
+    "御坂","一方通行","ベル"];
+
+    document.getElementById("button").onclick = function () {
+      var random = Math.floor(Math.random() * list.length);
+      document.getElementById("result").textContent = list[random];
+    }
+  }
+</script>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="C:\Users\tomo0\OneDrive\ドキュメント\ゲーム\ルーレット\all\style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <p>全キャラルーレット<br>ボタンをクリックしてください。</p>
+      <div class="wrapper-button">
+        <button id="button" class="button">開始</button>
+      </div>
+      <p id="result"></p>
+    </div>
+  </body>
+</html>
